@@ -1,0 +1,418 @@
+/*structure générale*/
+
+@import url("https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Gravitas+One&family=Pathway+Gothic+One&display=swap");
+
+body {
+  margin: 0;
+  background: #f0e1cf;
+  font-family: Pathway Gothic One;
+  font-size: large;
+  color: #594c47;
+  line-height: 1.6;
+}
+
+/*bannière*/
+.banner {
+  background: #e69943;
+  text-align: center;
+  padding: 15px 0 10px 0;
+}
+
+.banner span.titre-principal {
+  margin: 0;
+  display: block;
+  font-family: "Gravitas One";
+  color: #f0e1cf;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.banner span.sous-titre {
+  display: block;
+  margin-top: -5px;
+  font-family: Chau Philomene One;
+  font-size: 18px;
+  color: #f0e1cf;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/*menu de navigation*/
+.navbar {
+  background: #594c47;
+  border-radius: 8px;
+  margin: 0 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f0e1cf;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.navbar a.active {
+  color: #e69943;
+}
+
+.navbar a:hover {
+  color: #e69943;
+  transform: scale(1.1);
+}
+
+/*contenu principal*/
+
+h1 {
+  text-align: center;
+  font-family: "Gravitas One";
+  color: #594c47;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.sous-titre {
+  text-align: center;
+  color: #594c47;
+  font-size: 32px;
+  margin-top: 20px;
+}
+
+.chapeau {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #594c47;
+  background: #e69943;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.page {
+  background: white;
+  margin: 40px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: #594c47 2px 2px 8px 2px;
+}
+
+/*section bienvenue*/
+.bienvenue {
+  margin: 40px;
+  background: #f7f1e9;
+  padding: 60px 80px;
+  text-align: left;
+  border-bottom: #cc6533 4px solid;
+  border-top: #cc6533 4px solid;
+  border-radius: 25px;
+}
+
+.bienvenue h2 {
+  font-family: "Gravitas One";
+  font-size: 32px;
+  font-weight: 700;
+  color: #594c47;
+}
+
+.bienvenue p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: bold;
+  color: #594c47;
+}
+
+/*sommaire de l'article*/
+.sommaire {
+  background: transparent;
+  margin: 20px;
+  padding: 0;
+}
+
+.sommaire h2 {
+  font-family: "Chau Philomene One";
+  color: #594c47;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sommaire ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 15px;
+}
+
+.sommaire li {
+  background: #f7f1e9;
+  padding: 20px;
+  border-left: #e69943 5px solid;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sommaire li:hover {
+  transform: translateX(5px);
+  box-shadow: #594c47 2px 2px 8px;
+}
+
+.sommaire a {
+  color: #594c47;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.sommaire a:hover {
+  color: #e69943;
+}
+
+/*articles*/
+
+.image {
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #f7f1e9;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.video {
+  float: left;
+  max-width: 350px;
+  margin: 0 20px;
+  background: #f7f1e9;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+video {
+  border-radius: 8px;
+}
+
+.videoiframe {
+  max-width: 480px;
+  height: 270px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #f7f1e9;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#atoutdistance {
+  clear: left;
+}
+
+iframe {
+  border-radius: 8px;
+}
+
+.article {
+  background: white;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  border: #cc6533 2px solid;
+  text-align: justify;
+}
+
+.article h2 {
+  text-align: left;
+  font-family: Chau Philomene One;
+  color: #594c47;
+  font-size: 28px;
+}
+
+.article a {
+  color: #e69943;
+  text-decoration: none;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+/*vers le haut*/
+.vers-haut {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  font-size: 18px;
+  color: #594c47;
+  text-decoration: none;
+}
+
+.vers-haut:hover {
+  color: #e69943;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+/*webographie*/
+.webographie {
+  margin: 20px;
+  border: #cc6533 2px solid;
+  border-radius: 8px;
+  padding: 15px;
+  background: white;
+}
+
+.webographie summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  color: #594c47;
+  padding: 10px 0;
+}
+
+.webographie summary:hover {
+  color: #e69943;
+}
+
+.webographie table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.webographie table th,
+.webographie table td {
+  border: 1px solid #cc6533;
+  padding: 10px;
+  text-align: left;
+}
+
+.webographie table th {
+  background: #f7f1e9;
+  font-weight: bold;
+}
+
+.webographie a {
+  color: #e69943;
+  text-decoration: none;
+}
+
+.webographie a:hover {
+  text-decoration: underline;
+}
+
+/*pied de page*/
+
+footer {
+  background: #594c47;
+  color: #f0e1cf;
+  text-align: center;
+  padding: 20px 20px;
+  margin-top: 40px;
+  border-top: #e69943 4px solid;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+  padding: 0;
+  font-family: "Chau Philomene One";
+  color: #f0e1cf;
+}
+
+footer a {
+  color: #f0e1cf;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+footer a:hover {
+  color: #f0e1cf;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+/*styles pour les petits écrans*/
+@media (max-width: 767px) {
+  .page,
+  .bienvenue,
+  .chapeau,
+  .sommaire,
+  .article,
+  .webographie {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .sous-titre {
+    font-size: 24px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar a {
+    display: block;
+    text-align: center;
+  }
+
+  .sommaire ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image,
+  .videoiframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video {
+    float: none;
+    max-width: 100%;
+    margin: 15px auto;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .webographie table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .webographie table th,
+  .webographie table td {
+    min-width: 120px;
+  }
+}
